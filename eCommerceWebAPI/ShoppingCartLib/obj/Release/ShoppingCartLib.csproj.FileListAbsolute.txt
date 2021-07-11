@@ -1,0 +1,6 @@
+C:\Users\moaggarwal\source\repos\eCommerceWebAPI\ShoppingCartLib\bin\Release\ShoppingCartLib.dll
+C:\Users\moaggarwal\source\repos\eCommerceWebAPI\ShoppingCartLib\bin\Release\ShoppingCartLib.pdb
+C:\Users\moaggarwal\source\repos\eCommerceWebAPI\ShoppingCartLib\obj\Release\ShoppingCartLib.csprojAssemblyReference.cache
+C:\Users\moaggarwal\source\repos\eCommerceWebAPI\ShoppingCartLib\obj\Release\ShoppingCartLib.csproj.CoreCompileInputs.cache
+C:\Users\moaggarwal\source\repos\eCommerceWebAPI\ShoppingCartLib\obj\Release\ShoppingCartLib.dll
+C:\Users\moaggarwal\source\repos\eCommerceWebAPI\ShoppingCartLib\obj\Release\ShoppingCartLib.pdb

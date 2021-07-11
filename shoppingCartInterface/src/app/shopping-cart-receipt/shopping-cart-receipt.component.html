@@ -1,0 +1,73 @@
+<div class = "shopping-cart-receipt">
+    <div class = "shopping-cart-receipt-header">Shopping cart receipt</div>
+    <div class = "cart-items-container">
+        <div class = "cart-items-prop-container">
+            <div class = "item-prop-header small-item">
+                S.No.
+            </div>
+            <div class = "item-prop-header med-item">
+                Name
+            </div>
+            <div class = "item-prop-header description-item">
+                Description
+            </div>
+            <div class = "item-prop-header item-text-align">
+                Quantity
+            </div>
+            <div class = "item-prop-header item-text-align">
+                Price
+            </div>
+            <div class = "item-prop-header item-text-align">
+                Total Price
+            </div>
+        </div>
+        <div class = "cart-items-prop-container" 
+            *ngFor="let item of shopingCartReceipt.CartItems;index as i;">
+            <div class = "item-prop small-item">
+                {{i+1}}
+            </div>
+            <div class = "item-prop med-item">
+                {{item.Name}}
+            </div>
+            <div class = "item-prop description-item">
+                {{item.Description}}
+            </div>
+            <div class = "item-prop item-text-align">
+                {{item.Quantity}}
+            </div>
+            <div class = "item-prop item-text-align">
+                &#8377;{{item.Cost}}
+            </div>
+            <div class = "item-prop item-text-align">
+                &#8377;{{item.TotalCostPrice}}
+            </div>
+        </div>
+    </div>
+    
+    <div class = "cart-item-total-container">
+        <div class = "cart-subtotal-container">
+            <div class = "invoice-label">
+                Subtotal
+            </div>
+            <div class = "invoice-label-value">
+                &#8377;{{shopingCartReceipt.TotalCostPrice}}
+            </div>
+        </div>
+        <div class = "cart-subtotal-container">
+            <div class = "invoice-label">
+                Sales Tax
+            </div>
+            <div class = "invoice-label-value">
+                &#8377;{{shopingCartReceipt.BasicSalesTax + shopingCartReceipt.ImportDutyTax}}
+            </div>
+        </div>
+        <div class = "cart-subtotal-container">
+            <div class = "invoice-label grand-label">
+                Grand Total
+            </div>
+            <div class = "invoice-label-value grand-label-value">
+                &#8377;{{shopingCartReceipt.GrandTotal}}
+            </div>
+        </div>
+    </div>
+</div>
